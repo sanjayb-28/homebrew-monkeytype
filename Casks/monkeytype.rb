@@ -9,6 +9,12 @@ cask "monkeytype" do
 
   app "Monkeytype.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/Monkeytype.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Application Support/com.monkeytype.desktop",
     "~/Library/Preferences/com.monkeytype.desktop.plist",
