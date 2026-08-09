@@ -1,11 +1,14 @@
 cask "monkeytype" do
-  version "0.2.0"
-  sha256 "79a2a10808fe56a09c9837b966bf0b3f13b43903e0af43e2418c06ea4a999ccd"
+  version "0.4.0"
+  sha256 "a6174f890d14504f8be6341650246655304a952d4e87653b395a7cfc69f2a6b6"
 
   url "https://github.com/sanjayb-28/monkeytype-desktop/releases/download/v#{version}/Monkeytype_#{version}_aarch64.dmg"
   name "Monkeytype"
-  desc "Native desktop typing test app based on Monkeytype"
+  desc "Offline Monkeytype typing test for Apple Silicon"
   homepage "https://github.com/sanjayb-28/monkeytype-desktop"
+
+  depends_on arch: :arm64
+  depends_on macos: :tahoe
 
   app "Monkeytype.app"
 
