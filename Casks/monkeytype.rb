@@ -21,5 +21,8 @@ cask "monkeytype" do
   zap trash: [
     "~/Library/Application Support/com.monkeytype.desktop",
     "~/Library/Preferences/com.monkeytype.desktop.plist",
+    "~/Library/WebKit/com.monkeytype.desktop",
+    "~/Library/WebKit/monkeytype",
+    "~/Library/WebKit/monkeytype-mac",
   ]
 end
