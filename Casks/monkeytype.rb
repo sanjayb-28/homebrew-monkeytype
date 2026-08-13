@@ -1,6 +1,6 @@
 cask "monkeytype" do
-  version "0.4.9"
-  sha256 "efa5029814aaaedac2f0cc2c4f9fba68c4e72b40a0335d41900f0ed9d72f3995"
+  version "0.4.10"
+  sha256 "32377ffcec05e79bc1efbc9c1912fa08bdebb206d0312275bcbf1e93a1a9b025"
 
   url "https://github.com/sanjayb-28/monkeytype-desktop/releases/download/v#{version}/Monkeytype_#{version}_aarch64.dmg"
   name "Monkeytype"
