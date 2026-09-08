@@ -12,10 +12,8 @@ cask "monkeytype" do
 
   app "Monkeytype.app"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/Monkeytype.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-cr", "{{appdir}}/Monkeytype.app"]
   end
 
   zap trash: [
